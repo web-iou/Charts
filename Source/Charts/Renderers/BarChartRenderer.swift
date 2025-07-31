@@ -766,7 +766,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 if e.y < 0 {
                     roundedCorners = set.roundedCornersInverted
                 }
-                let bezierPath = UIBezierPath(roundedRect: barRect, byRoundingCorners: roundedCorners,
+                let bezierPath = UIBezierPath(roundedRect: barRect, byRoundingCorners: [],
                                               cornerRadii: .init(width: set.cornerRadius, height: set.cornerRadius))
                 context.addPath(bezierPath.cgPath)
                 context.drawPath(using: .fill)
