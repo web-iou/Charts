@@ -775,7 +775,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
     }
 
     /// Sets the drawing position of the highlight object based on the given bar-rect.
-    internal func setHighlightDrawPos(highlight high: Highlight, barRect: CGRect)
+    open func setHighlightDrawPos(highlight high: Highlight, barRect: CGRect)
     {
         high.setDraw(x: barRect.midX, y: barRect.origin.y)
     }

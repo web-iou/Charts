@@ -637,7 +637,7 @@ open class HorizontalBarChartRenderer: BarChartRenderer
     }
     
     /// Sets the drawing position of the highlight object based on the riven bar-rect.
-    internal override func setHighlightDrawPos(highlight high: Highlight, barRect: CGRect)
+    open override func setHighlightDrawPos(highlight high: Highlight, barRect: CGRect)
     {
         high.setDraw(x: barRect.midY, y: barRect.origin.x + barRect.size.width)
     }
